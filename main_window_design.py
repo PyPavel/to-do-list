@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'design_main_window.py'
+#
+# Created by: PyQt5 UI code generator 5.5.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(762, 839)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.label_3)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_2.addWidget(self.label_2)
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.horizontalLayout_2.addWidget(self.label)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.urgent = QtWidgets.QListWidget(self.centralwidget)
+        self.urgent.setDragEnabled(True)
+        self.urgent.setDragDropMode(QtWidgets.QAbstractItemView.DragDrop)
+        self.urgent.setObjectName("urgent")
+        self.horizontalLayout.addWidget(self.urgent)
+        self.not_utgent = QtWidgets.QListWidget(self.centralwidget)
+        self.not_utgent.setAcceptDrops(True)
+        self.not_utgent.setDragEnabled(True)
+        self.not_utgent.setDragDropMode(QtWidgets.QAbstractItemView.DragDrop)
+        self.not_utgent.setObjectName("not_utgent")
+        self.horizontalLayout.addWidget(self.not_utgent)
+        self.done = QtWidgets.QListWidget(self.centralwidget)
+        self.done.setAcceptDrops(True)
+        self.done.setDragEnabled(True)
+        self.done.setDragDropMode(QtWidgets.QAbstractItemView.DragDrop)
+        self.done.setObjectName("done")
+        self.horizontalLayout.addWidget(self.done)
+        self.verticalLayout_2.addLayout(self.horizontalLayout)
+        self.verticalLayout_3.addLayout(self.verticalLayout_2)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.clear_button = QtWidgets.QPushButton(self.centralwidget)
+        self.clear_button.setObjectName("clear_button")
+        self.horizontalLayout_4.addWidget(self.clear_button)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_4)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "My-To-Do-List"))
+        self.label_3.setText(_translate("MainWindow", "TASKS"))
+        self.label_2.setText(_translate("MainWindow", "BACKLOG"))
+        self.label.setText(_translate("MainWindow", "FINISHED"))
+        self.clear_button.setText(_translate("MainWindow", "CLEAR"))
+
